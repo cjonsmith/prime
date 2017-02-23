@@ -6,7 +6,7 @@ from math import sqrt
 from itertools import count, islice
 
 
-def is_prime(n):
+def is_prime(num):
     """Determines if a number is prime."""
     # Credit to: http://stackoverflow.com/a/27946768/6465897
     return num > 1 and all(num % i for i in islice(count(2), int(sqrt(num)-1)))
