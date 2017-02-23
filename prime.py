@@ -116,8 +116,7 @@ if __name__ == '__main__':
     """Usage: python prime_days.py [, numNextPrimeDays]"""
     start = 1 if len(sys.argv) < 2 else int(sys.argv[1])
 
-    generator = prime_day()
-    for i, prime_day in enumerate(prime_day()):
+    for i, prime_day in enumerate(get_prime_days()):
        if i >= start: break
        print(prime_day)
 
